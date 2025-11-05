@@ -1,0 +1,14 @@
+D:\REPOS\Ind\bin\Debug\net8.0\Ind.exe
+D:\REPOS\Ind\bin\Debug\net8.0\Ind.deps.json
+D:\REPOS\Ind\bin\Debug\net8.0\Ind.runtimeconfig.json
+D:\REPOS\Ind\bin\Debug\net8.0\Ind.dll
+D:\REPOS\Ind\bin\Debug\net8.0\Ind.pdb
+D:\REPOS\Ind\obj\Debug\net8.0\Ind.GeneratedMSBuildEditorConfig.editorconfig
+D:\REPOS\Ind\obj\Debug\net8.0\Ind.AssemblyInfoInputs.cache
+D:\REPOS\Ind\obj\Debug\net8.0\Ind.AssemblyInfo.cs
+D:\REPOS\Ind\obj\Debug\net8.0\Ind.csproj.CoreCompileInputs.cache
+D:\REPOS\Ind\obj\Debug\net8.0\Ind.dll
+D:\REPOS\Ind\obj\Debug\net8.0\refint\Ind.dll
+D:\REPOS\Ind\obj\Debug\net8.0\Ind.pdb
+D:\REPOS\Ind\obj\Debug\net8.0\Ind.genruntimeconfig.cache
+D:\REPOS\Ind\obj\Debug\net8.0\ref\Ind.dll

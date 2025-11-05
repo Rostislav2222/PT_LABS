@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\REPOS\\Ind\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F451C14-BA6D-4824-8686-BCCF8C1E32C5}|Ind.csproj|d:\\repos\\ind\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F451C14-BA6D-4824-8686-BCCF8C1E32C5}|Ind.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F451C14-BA6D-4824-8686-BCCF8C1E32C5}|Ind.csproj|d:\\repos\\ind\\classpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F451C14-BA6D-4824-8686-BCCF8C1E32C5}|Ind.csproj|solutionrelative:classpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClassPoint.cs",
+              "DocumentMoniker": "D:\\REPOS\\Ind\\ClassPoint.cs",
+              "RelativeDocumentMoniker": "ClassPoint.cs",
+              "ToolTip": "D:\\REPOS\\Ind\\ClassPoint.cs",
+              "RelativeToolTip": "ClassPoint.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA8wD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T14:57:28.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\REPOS\\Ind\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\REPOS\\Ind\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T14:55:43.72Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
