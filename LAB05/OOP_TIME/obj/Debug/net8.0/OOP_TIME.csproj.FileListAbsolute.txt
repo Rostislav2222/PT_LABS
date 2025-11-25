@@ -1,0 +1,15 @@
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\OOP_TIME.GeneratedMSBuildEditorConfig.editorconfig
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\OOP_TIME.AssemblyInfoInputs.cache
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\OOP_TIME.AssemblyInfo.cs
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\OOP_TIME.csproj.CoreCompileInputs.cache
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\OOP_TIME.sourcelink.json
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\bin\Debug\net8.0\OOP_TIME.exe
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\bin\Debug\net8.0\OOP_TIME.deps.json
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\bin\Debug\net8.0\OOP_TIME.runtimeconfig.json
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\bin\Debug\net8.0\OOP_TIME.dll
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\bin\Debug\net8.0\OOP_TIME.pdb
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\OOP_TIME.dll
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\refint\OOP_TIME.dll
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\OOP_TIME.pdb
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\OOP_TIME.genruntimeconfig.cache
+D:\REPOS\PT_LABS\LAB05\OOP_TIME\obj\Debug\net8.0\ref\OOP_TIME.dll
