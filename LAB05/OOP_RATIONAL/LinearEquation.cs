@@ -1,115 +1,147 @@
-﻿using System;
+﻿using OOP_RATIONAL;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-public class LinearEquation
+namespace OOP_RATIONAL
 {
-    private double[] coefficients;
-    private double b;
-
-    public double[] Coefficients
+    public class Rational
     {
-        get { return coefficients; }
-        set { coefficients = value; }
-    }
-
-    public double B
-    {
-        get { return b; }
-        set { b = value; }
-    }
-
-    public LinearEquation(double[] coefficients, double b)
-    {
-        this.coefficients = coefficients;
-        this.b = b;
-    }
-
-    public static LinearEquation operator +(LinearEquation eq1, LinearEquation eq2)
-    {
-        if (eq1.coefficients.Length != eq2.coefficients.Length)
-            throw new ArgumentException("Уравнения должны иметь одинаковое количество переменных");
-
-        double[] newCoeffs = new double[eq1.coefficients.Length];
-        for (int i = 0; i < newCoeffs.Length; i++)
+        private int numerator;
+        public int Numerator
         {
-            newCoeffs[i] = eq1.coefficients[i] + eq2.coefficients[i];
-        }
-        double newB = eq1.b + eq2.b;
-        return new LinearEquation(newCoeffs, newB);
-    }
-
-    public static LinearEquation operator -(LinearEquation eq1, LinearEquation eq2)
-    {
-        if (eq1.coefficients.Length != eq2.coefficients.Length)
-            throw new ArgumentException("Уравнения должны иметь одинаковое количество переменных");
-
-        double[] newCoeffs = new double[eq1.coefficients.Length];
-        for (int i = 0; i < newCoeffs.Length; i++)
-        {
-            newCoeffs[i] = eq1.coefficients[i] - eq2.coefficients[i];
-        }
-        double newB = eq1.b - eq2.b;
-        return new LinearEquation(newCoeffs, newB);
-    }
-
-    public override string ToString()
-    {
-        if (coefficients == null || coefficients.Length == 0)
-            return "0 = " + b;
-
-        StringBuilder sb = new StringBuilder();
-        bool firstTerm = true;
-
-        for (int i = 0; i < coefficients.Length; i++)
-        {
-            double coef = coefficients[i];
-            if (coef == 0)
-                continue;
-
-            string sign = "";
-            string term = "";
-
-            if (coef > 0)
+            get { return this.numerator; }
+            set
             {
-                if (!firstTerm)
-                    sign = " + ";
-                else if (coef == 1)
-                    term = "x" + (i + 1);
-                else
-                    term = coef + "x" + (i + 1);
+                this.numerator = value;
+                Simplify();
             }
-            else
-            {
-                sign = firstTerm ? "-" : " - ";
-                coef = Math.Abs(coef);
-                term = (coef == 1) ? "x" + (i + 1) : coef + "x" + (i + 1);
-            }
-
-            if (firstTerm && coef > 0)
-            {
-                sb.Append(term);
-            }
-            else
-            {
-                sb.Append(sign + term);
-            }
-
-            firstTerm = false;
         }
 
-        if (sb.Length == 0)
-            sb.Append("0");
+        private int denominator;
+        public int Denominator
+        {
+            get { return this.denominator; }
+            set
+            {
+                if (value == 0)
+                {
+                    throw new DivideByZeroException("Denominator should not be = 0");
+                }
+                this.denominator = value;
+                Simplify();
+            }
+        }
 
-        sb.Append(" = " + b);
-        return sb.ToString();
+
+        public Rational(int numerator, int denominator)
+        {
+            this.numerator = numerator;
+            if (denominator == 0)
+            {
+                throw new DivideByZeroException("Denominator shouid not be = 0");
+            }
+            this.denominator = denominator;
+            Simplify();
+        }
+
+        public Rational(int numerator)
+        {
+            this.numerator = numerator;
+            this.denominator = 1;
+            Simplify();
+        }
+        public override string ToString()
+        {
+            return $"Rational: {Numerator} / {Denominator}";
+        }
+
+
+        public static bool operator ==(Rational r9, Rational r10)
+        {
+            if (ReferenceEquals(r9, null) && ReferenceEquals(r10, null)) return true;
+            if (ReferenceEquals(r9, null) || ReferenceEquals(r10, null)) return false;
+            return r9.Numerator * r10.Denominator == r10.Numerator * r9.Denominator;
+        }
+
+        public static bool operator !=(Rational r9, Rational r10)
+        {
+            return !(r9 == r10);
+        }
+
+        public static bool operator <(Rational r1, Rational r2)
+        {
+            return r1.Numerator * r2.Denominator < r2.Numerator * r1.Denominator; ;
+        }
+
+        public static bool operator >(Rational r1, Rational r2)
+        {
+            return r1.Numerator * r2.Denominator > r2.Numerator * r1.Denominator;
+        }
+
+public static bool operator >=(Rational r1, Rational r2)
+        {
+            return r1.Numerator * r2.Denominator >= r2.Numerator * r1.Denominator; ;
+        }
+
+        public static bool operator <=(Rational r1, Rational r2)
+        {
+            return r1.Numerator * r2.Denominator <= r2.Numerator * r1.Denominator; ;
+        }
+        public static Rational operator +(Rational r1, Rational r2)
+        {
+            int newDenominator = r1.Denominator * r2.Denominator;
+            int newNumerator = r1.Numerator * r2.Denominator + r2.Numerator * r1.Denominator;
+            return new Rational(newNumerator, newDenominator);
+        }
+
+        public static Rational operator -(Rational r1, Rational r2)
+        {
+            int newDenominator = r1.Denominator * r2.Denominator;
+            int newNumerator = r1.Numerator * r2.Denominator - r2.Numerator * r1.Denominator;
+            return new Rational(newNumerator, newDenominator);
+        }
+
+        public static Rational operator *(Rational r1, Rational r2)
+        {
+            int newDenominator = r1.Denominator * r2.Denominator;
+            int newNumerator = r1.Numerator * r2.Numerator;
+            return new Rational(newNumerator, newDenominator);
+        }
+
+        public static Rational operator /(Rational r1, Rational r2)
+        {
+            int newDenominator = r1.Denominator * r2.Numerator;
+            int newNumerator = r1.Numerator * r2.Denominator;
+            return new Rational(newNumerator, newDenominator);
+        }
+
+
+        private static int GCD(int a, int b)
+        {
+            while (b != 0)
+            {
+                int temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
+        }
+        private void Simplify()
+        {
+            if (denominator < 0)
+            {
+                numerator *= -1;
+                denominator *= -1;
+            }
+            int gcd = GCD(Math.Abs(numerator), Math.Abs(denominator));
+            numerator /= gcd;
+            denominator /= gcd;
+        }
+
     }
 
-    public override bool Equals(object obj)
-    {
-        if (obj == null || GetType() != obj.GetType())
-            return false;
-
-        LinearEquation other = (LinearEquation)obj;
-        return this.coefficients.Length == other.coefficients.Length;
-    }
 }
