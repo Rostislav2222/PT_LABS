@@ -1,0 +1,15 @@
+D:\REPOS\PT_LABS\LAB07\LAB07\bin\Debug\net8.0\LAB07.exe
+D:\REPOS\PT_LABS\LAB07\LAB07\bin\Debug\net8.0\LAB07.deps.json
+D:\REPOS\PT_LABS\LAB07\LAB07\bin\Debug\net8.0\LAB07.runtimeconfig.json
+D:\REPOS\PT_LABS\LAB07\LAB07\bin\Debug\net8.0\LAB07.dll
+D:\REPOS\PT_LABS\LAB07\LAB07\bin\Debug\net8.0\LAB07.pdb
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\LAB07.GeneratedMSBuildEditorConfig.editorconfig
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\LAB07.AssemblyInfoInputs.cache
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\LAB07.AssemblyInfo.cs
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\LAB07.csproj.CoreCompileInputs.cache
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\LAB07.sourcelink.json
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\LAB07.dll
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\refint\LAB07.dll
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\LAB07.pdb
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\LAB07.genruntimeconfig.cache
+D:\REPOS\PT_LABS\LAB07\LAB07\obj\Debug\net8.0\ref\LAB07.dll
